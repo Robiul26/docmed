@@ -33,6 +33,9 @@ header {
     background: #fff;
     box-shadow: .1rem .1rem 1rem rgb(197, 194, 194);
     height: 10vh;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo {
@@ -198,6 +201,7 @@ header {
     justify-content: center;
     margin: 10rem auto;
     position: relative;
+    height: 90vh;
 }
 
 .welcome-aria aside {
@@ -292,6 +296,7 @@ header {
 
 .department .heading h2 {
     font-size: 3.6rem;
+    margin-top: 4rem;
 }
 
 .department .heading p {
@@ -300,6 +305,7 @@ header {
     line-height: 2.8rem;
     margin-top: 1rem;
     margin-bottom: 4rem;
+    text-align: center;
 }
 
 .department .box-container {
@@ -339,6 +345,7 @@ header {
 
 .department .box-container .box .box-text {
     padding-left: 2rem;
+    padding-bottom: 2rem;
 }
 
 .department .box-container .box .box-text h3 {
@@ -375,6 +382,300 @@ header {
 
 /* Department section ends */
 
+/* business expart aria section starts */
+
+.business-expart-area {
+    /* padding: 0 7%; */
+    background: #f5fbff;
+    height: 90vh;
+    display: table;
+    content: '';
+    box-sizing: border-box;
+    clear: both;
+}
+
+.business-expart-area #tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.business-expart-area #tabs ul {}
+
+.business-expart-area #tabs>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-bottom: .1rem solid gray;
+    padding: 5% 7%;
+}
+
+.business-expart-area #tabs>div i {
+    font-size: 3.5rem;
+    color: #fff;
+    background: #0181f5;
+    border: .1rem solid #0181f5;
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    line-height: 7.5rem;
+    text-align: center;
+}
+
+.business-expart-area #tabs>div article {
+    padding-right: 2rem;
+}
+
+.business-expart-area #tabs>div h2 {
+    font-size: 2rem;
+    padding: 2rem 0;
+    color: #1f1f1f;
+}
+
+.business-expart-area #tabs>div p {
+    font-size: 1.6rem;
+    color: #727272;
+    line-height: 2.8rem;
+}
+
+.business-expart-area #tabs ul li {
+    display: inline-block;
+    width: 35rem;
+    height: 10rem;
+    line-height: 10rem;
+    text-align: center;
+}
+
+.business-expart-area #tabs ul li:focus-within {
+    background: #fff;
+}
+
+.business-expart-area #tabs ul li a {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #1f1f1f;
+    padding: 35 px 0 35 px 40 px;
+    padding: 3.5rem 0 3.5rem 4rem;
+}
+
+/* business expart aria section ends */
+
+/* carolor starts */
+
+.caro {
+    height: 90vh;
+    display: table;
+    content: '';
+    clear: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caro .owl-nav, .caro .owl-dots {
+    display: none;
+}
+
+.caro .owl-carousel .carousel-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #1f1f1f;
+}
+
+.owl-carousel .owl-item img {
+    /* width: auto; */
+}
+
+.caro .owl-carousel .carousel-box img {
+    opacity: .6;
+}
+
+.caro .owl-carousel .carousel-box .info-text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
+}
+
+.caro .owl-carousel .carousel-box .info-text i {
+    font-size: 4rem;
+    color: #fff;
+}
+
+.caro .owl-carousel .carousel-box .info-text hr {
+    border-bottom: 0.2rem solid #fff;
+    margin-top: 3rem;
+}
+
+.caro .owl-carousel .carousel-box .info-text p {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.caro .owl-carousel .carousel-box .info-text p .name {
+    font-size: 1.3rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: 2.1rem;
+    line-height: 2rem;
+}
+
+/* carolor ends */
+
+/* Expart doctors section starts */
+
+.doctors {
+    padding: 1% 7%;
+    height: 90vh;
+    display: table;
+    content: '';
+    box-sizing: border-box;
+    clear: both;
+}
+
+.doctors .heading h2 {
+    font-size: 3.6rem;
+    font-weight: 500;
+    color: #1f1f1f;
+}
+
+.doctors .doctor-box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.doctors .doctor-box-container .doctor-box {
+    margin: 1rem;
+    /* overflow: hidden; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.doctors .doctor-box-container .doctor-box .doctor-thumb {
+    /* z-index: 1; */
+    overflow: hidden;
+}
+
+.doctors .doctor-box-container .doctor-box img {
+    height: auto;
+    display: block;
+}
+
+.doctors .doctor-box-container .doctor-box:hover>.doctor-thumb img {
+    transform: scale(1.05);
+}
+
+.doctors .doctor-box-container .doctor-box:hover>.doctor-texts {
+    background: #5db2ff;
+    color: #fff;
+    transition: 0s;
+}
+
+.doctors .doctor-box-container .doctor-box .doctor-texts {
+    color: #1f1f1f;
+    text-align: center;
+    background: #f5fbff;
+}
+
+.doctors .doctor-box-container .doctor-box .doctor-texts h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-top: 1rem;
+}
+
+.doctors .doctor-box-container .doctor-box .doctor-texts p {
+    font-size: 1.4em;
+    padding-top: .5rem;
+    padding-bottom: 2rem;
+}
+
+/* Expart doctors section ends */
+
+/* footer section starts */
+
+footer {
+    background: #1f1f1f;
+}
+
+footer .footer-text-container {
+    padding: 1% 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .footer-text-container .social-links p {
+    font-size: 1.6rem;
+    color: #919191;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer .footer-text-container .social-links ul li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+footer .footer-text-container .social-links ul li a {
+    width: 6rem;
+    height: 6rem;
+    line-height: 6rem;
+    text-align: center;
+    background: #707070;
+    display: inline-block;
+    font-size: 1.6rem;
+    color: #bababa;
+    border-radius: .4rem;
+}
+
+footer .footer-text-container .social-links ul li a:hover {
+    color: #fff;
+}
+
+footer .footer-text-container>div h2 {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+}
+
+footer .footer-text-container>div ul li a {
+    font-size: 1.6rem;
+    color: #bababa;
+    line-height: 42px;
+}
+
+footer .footer-text-container>div p {
+    font-size: 1.6rem;
+    color: #bababa;
+    line-height: 42px;
+}
+
+footer .footer-text-container>div ul li a:hover {
+    color: #5db2ff;
+}
+
+.footer-copyright-container {
+    background: black;
+    padding: 3rem;
+    color: #919191;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+/* footer section ends */
+
 /* Responsive  */
 
 @media (min-width:993px) {
@@ -390,6 +691,7 @@ header {
     header {
         padding: 0;
         height: 22vh;
+        position: fixed;
     }
     header .logo {
         position: absolute;
@@ -438,9 +740,8 @@ header {
         font-size: 2rem;
         border-radius: .5rem;
         padding: 1rem;
-        margin: 1rem;
         position: absolute;
-        right: 0;
+        right: 1rem;
         text-transform: uppercase;
     }
     #menu a span {
@@ -470,6 +771,7 @@ header {
     }
     .welcome-aria {
         flex-direction: column;
+        margin: 30rem auto;
     }
     .welcome-aria aside {
         width: 100%;
@@ -488,5 +790,50 @@ header {
         width: 100%;
         padding-left: 0;
         padding: 1.5rem;
+    }
+    .department {
+        padding-bottom: 5rem;
+    }
+    .department .heading {
+        padding: 2rem;
+    }
+    .department .heading p {
+        text-align: justify;
+    }
+    .business-expart-area #tabs>div {
+        flex-direction: column;
+    }
+    .business-expart-area #tabs ul {
+        margin-top: 2rem;
+    }
+    .business-expart-area #tabs ul li a {
+        padding: 1rem;
+    }
+    .owl-carousel .owl-item img {
+        width: auto;
+    }
+    .business-expart-area #tabs ul li {
+        text-align: left;
+        height: 5rem;
+        line-height: 5rem;
+    }
+    .business-expart-area #tabs>div p {
+        margin-bottom: 2rem;
+    }
+    aside img {
+        width: 100%;
+    }
+    .caro .owl-carousel .carousel-box img {
+        opacity: .2;
+    }
+    .caro .owl-carousel .carousel-box .info-text {
+        width: 90%;
+    }
+    footer .footer-text-container {
+        flex-direction: column;
+    }
+    footer .footer-text-container {
+        padding: 7% 4%;
+        align-items: flex-start;
     }
 }
